@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,30 @@
 
 @implementation AppDelegate
 
+#pragma mark - Overridden (Life Cycle)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //创建ViewController
+    ViewController* viewController = [[ViewController alloc] init];
+    
+    // 创建UINavigationController
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    // 设置导航栏样式
+    navigationController.navigationBar.barStyle = UIBarStyleDefault;
+    
+    // 隐藏navigation控制器的Tool Bar 工具栏，默认YES
+    [navigationController setToolbarHidden:NO];
+    
+    // 设置UINavigationController为rootViewController
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

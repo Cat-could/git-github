@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060ED3A122C5C0C600F4753C /* weather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 060ED3A022C5C0C600F4753C /* weather.plist */; };
+		068CE34522C46A520011764D /* WeatherDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 068CE34422C46A520011764D /* WeatherDataStore.m */; };
+		068CE34822C496890011764D /* InternetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068CE34722C496890011764D /* InternetModel.m */; };
+		06AA49A522C8B8790031A768 /* InternetForecastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AA49A422C8B8790031A768 /* InternetForecastModel.m */; };
 		06C4CF8922C3583D006036E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4CF8822C3583D006036E3 /* AppDelegate.m */; };
 		06C4CF8C22C3583D006036E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4CF8B22C3583D006036E3 /* ViewController.m */; };
 		06C4CF8F22C3583D006036E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C4CF8D22C3583D006036E3 /* Main.storyboard */; };
@@ -15,6 +19,7 @@
 		06C4CF9722C3583E006036E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4CF9622C3583E006036E3 /* main.m */; };
 		06C4CFA122C3583E006036E3 /* weathercastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4CFA022C3583E006036E3 /* weathercastTests.m */; };
 		06C4CFAC22C3583E006036E3 /* weathercastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4CFAB22C3583E006036E3 /* weathercastUITests.m */; };
+		06F5D3F422CA3EC9004D54EA /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F5D3F322CA3EC9004D54EA /* CityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060ED3A022C5C0C600F4753C /* weather.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = weather.plist; sourceTree = "<group>"; };
+		068CE34322C46A520011764D /* WeatherDataStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherDataStore.h; sourceTree = "<group>"; };
+		068CE34422C46A520011764D /* WeatherDataStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherDataStore.m; sourceTree = "<group>"; };
+		068CE34622C496890011764D /* InternetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InternetModel.h; sourceTree = "<group>"; };
+		068CE34722C496890011764D /* InternetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternetModel.m; sourceTree = "<group>"; };
+		06AA49A322C8B8790031A768 /* InternetForecastModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InternetForecastModel.h; sourceTree = "<group>"; };
+		06AA49A422C8B8790031A768 /* InternetForecastModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternetForecastModel.m; sourceTree = "<group>"; };
 		06C4CF8422C3583D006036E3 /* weathercast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weathercast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C4CF8722C3583D006036E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06C4CF8822C3583D006036E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +63,8 @@
 		06C4CFA722C3583E006036E3 /* weathercastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weathercastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C4CFAB22C3583E006036E3 /* weathercastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weathercastUITests.m; sourceTree = "<group>"; };
 		06C4CFAD22C3583E006036E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F5D3F222CA3EC9004D54EA /* CityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		06F5D3F322CA3EC9004D54EA /* CityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		068CE34222C46A280011764D /* WeatherModel */ = {
+			isa = PBXGroup;
+			children = (
+				068CE34322C46A520011764D /* WeatherDataStore.h */,
+				068CE34422C46A520011764D /* WeatherDataStore.m */,
+				068CE34622C496890011764D /* InternetModel.h */,
+				068CE34722C496890011764D /* InternetModel.m */,
+				06AA49A322C8B8790031A768 /* InternetForecastModel.h */,
+				06AA49A422C8B8790031A768 /* InternetForecastModel.m */,
+			);
+			path = WeatherModel;
+			sourceTree = "<group>";
+		};
 		06C4CF7B22C3583D006036E3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +128,7 @@
 		06C4CF8622C3583D006036E3 /* weathercast */ = {
 			isa = PBXGroup;
 			children = (
+				068CE34222C46A280011764D /* WeatherModel */,
 				06C4CF8722C3583D006036E3 /* AppDelegate.h */,
 				06C4CF8822C3583D006036E3 /* AppDelegate.m */,
 				06C4CF8A22C3583D006036E3 /* ViewController.h */,
@@ -110,6 +138,9 @@
 				06C4CF9222C3583E006036E3 /* LaunchScreen.storyboard */,
 				06C4CF9522C3583E006036E3 /* Info.plist */,
 				06C4CF9622C3583E006036E3 /* main.m */,
+				060ED3A022C5C0C600F4753C /* weather.plist */,
+				06F5D3F222CA3EC9004D54EA /* CityViewController.h */,
+				06F5D3F322CA3EC9004D54EA /* CityViewController.m */,
 			);
 			path = weathercast;
 			sourceTree = "<group>";
@@ -238,6 +269,7 @@
 				06C4CF9422C3583E006036E3 /* LaunchScreen.storyboard in Resources */,
 				06C4CF9122C3583E006036E3 /* Assets.xcassets in Resources */,
 				06C4CF8F22C3583D006036E3 /* Main.storyboard in Resources */,
+				060ED3A122C5C0C600F4753C /* weather.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06AA49A522C8B8790031A768 /* InternetForecastModel.m in Sources */,
 				06C4CF8C22C3583D006036E3 /* ViewController.m in Sources */,
+				068CE34522C46A520011764D /* WeatherDataStore.m in Sources */,
+				06F5D3F422CA3EC9004D54EA /* CityViewController.m in Sources */,
 				06C4CF9722C3583E006036E3 /* main.m in Sources */,
+				068CE34822C496890011764D /* InternetModel.m in Sources */,
 				06C4CF8922C3583D006036E3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
